@@ -1,27 +1,65 @@
 \documentclass{amsart}
 
-\input{StandardPaper2.tex}
+\input{macros.tex}
 
-\begin{document}
 
-\title[]
- {}
+\title[GA Rev Summary]
+ {Geometric Analysis Reviews Summary}
 
 \curraddr{}
 \email{}
 \date{\today}
 
-\dedicatory{}
-\subjclass[2010]{}
-\keywords{}
-
-\begin{abstract}
-\end{abstract}
+\begin{document}
 
 \maketitle
 
 \section{Introduction}
 \label{sec:intro}
 
+Geometric Analysis Reviews is an approach to mathematics research based on open, collaborative efforts leveraging modern communication facilitated by the Internet.
 
+\section{Scholarly Publishing}
+\label{sec:publishing}
+
+\subsection{Reviews: A new kind of journal}
+\label{subsec:publishing_reviews}
+
+\begin{itemize}
+\item Workflow:
+\begin{enumerate}
+\item Paper uploaded to arXiv.
+\item Paper discussed  by the community on GA Reviews
+\item Paper accepted for publication on arXiv overlay type journal based on community refereeing
+\end{enumerate}
+\end{itemize}
+
+\subsection{Open collaboration}
+\label{subsec:publishing_collaboration}
+
+
+\begin{itemize}
+\item Similar to Polymath project \url{https://polymathprojects.org/}
+\item Write survey articles and proposals for major outstanding problems
+\item Needs collaborative \LaTeX editor
+\item 
+\end{itemize}
+
+\section{Design of community web platform}
+\label{sec:webdesign}
+
+\begin{itemize}
+\item Modern "responsive" design with mobile/tablet access built in from the beginning
+\item Paper discussed on GA Reviews should have an arXiv identifier and then discussion
+\item Vote up/down like on Reddit, Stack Exchange, ... to show most relevant/best comments first
+\item Need a Wiki/Knowledgebase somewhere (see e.g. Polymath Wiki \url{http://michaelnielsen.org/polymath1/index.php?title=Main_Page} and nLab \url{https://ncatlab.org/nlab/show/HomePage})
+\end{itemize}
+
+\subsection{Technical Aspects}
+\label{subsec:webdesign_technical}
+
+\begin{itemize}
+\item Built using Meteor.js
+\item Use Stack Exchange Markdown editor for comments, posts discussions etc.
+\end{itemize}
 \end{document}

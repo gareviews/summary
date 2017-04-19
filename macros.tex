@@ -1,14 +1,3 @@
-%\usepackage{etoolbox}
-%\makeatletter
-%\let\ams@starttoc\@starttoc
-%\makeatother
-%\makeatletter
-%\let\@starttoc\ams@starttoc
-%\patchcmd{\@starttoc}{\makeatletter}{\makeatletter\parskip\z@}{}{}
-%\makeatother
-
-%\usepackage[parfill]{parskip}
-
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 \usepackage{bookmark}
 \usepackage{amsthm,thmtools,amssymb,amsmath,amscd}
@@ -25,7 +14,7 @@
 
 \usepackage{graphicx}
 
-\swapnumbers
+% Theorems
 \declaretheorem[name=Theorem,numberwithin=section]{thm}
 \declaretheorem[name=Remark,style=remark,sibling=thm]{rem}
 \declaretheorem[name=Lemma,sibling=thm]{lemma}
@@ -120,26 +109,15 @@
 \DeclareMathOperator{\weingarten}{\mathcal{W}}
 \DeclareMathOperator{\inj}{inj}
 
-%Environments
-\newcommand{\Theo}[3]{\begin{#1}\label{#2} #3 \end{#1}}
-\newcommand{\pf}[1]{\begin{proof} #1 \end{proof}}
-\newcommand{\eq}[1]{\begin{equation}\begin{alignedat}{2} #1 \end{alignedat}\end{equation}}
-\newcommand{\IntEq}[4]{#1&#2#3	 &\quad &\text{in}~#4,}
-\newcommand{\BEq}[4]{#1&#2#3	 &\quad &\text{on}~#4}
-\newcommand{\br}[1]{\left(#1\right)}
-
-
-
-%Logical symbols
-\newcommand{\Ra}{\Rightarrow}
-\newcommand{\ra}{\rightarrow}
-\newcommand{\hra}{\hookrightarrow}
-\newcommand{\mt}{\mapsto}
+% Names
+\newcommand{\arXiv}{arXiv}
+\newcommand{\mobius}{M\"obius}
+\newcommand{\poincare}{Poincar\`e}
 
 %Notes
-\newcommand{\pa}[1]{{\color{green} pa: {#1}}}
-\newcommand{\jj}[1]{{\color{red} jj: {#1}}}
-\newcommand{\mni}[1]{{\color{blue} mni: {#1}}}
+\newcommand{\pb}[1]{{\color{green} PB: {#1}}}
+\newcommand{\hl}[1]{{\color{red} HL: {#1}}}
+\newcommand{\gw}[1]{{\color{blue} GW: {#1}}}
 
 %Fonts
 \newcommand{\mc}{\mathcal}
@@ -149,9 +127,7 @@
 %Spacing
 \newcommand{\hp}{\hphantom}
 
-
-%\parindent 0 pt
-
+% Overleaf stuff?
 \protected\def\ignorethis#1\endignorethis{}
 \let\endignorethis\relax
 \def\TOCstop{\addtocontents{toc}{\ignorethis}}
